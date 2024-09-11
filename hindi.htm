@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>समास - हिंदी व्याकरण</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        .tips {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f5e6;
+            border-left: 5px solid #4CAF50;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>समास - हिंदी व्याकरण</h1>
+        <p>समास क्या है और इसके प्रकार</p>
+    </header>
+
+    <div class="content">
+        <p>समास दो या दो से अधिक शब्दों के योग से बने एक नए शब्द को कहते हैं। हिंदी व्याकरण में समास का विशेष महत्व है।</p>
+        <button class="button" onclick="showTypes()">समास के प्रकार जानें</button>
+
+        <div id="samasTypes" class="hidden">
+            <h2>समास के प्रकार:</h2>
+            <ul>
+                <li><b>द्वंद्व समास:</b> दो शब्दों का समान रूप से मिलना। जैसे - माता-पिता।</li>
+                <li><b>तत्पुरुष समास:</b> जिसमें एक शब्द दूसरे पर निर्भर करता है। जैसे - राजकुमार (राजा का कुमार)।</li>
+                <li><b>कर्मधारय समास:</b> विशेषण और विशेष्य के योग से बनता है। जैसे - नीलकमल (नीला + कमल)।</li>
+                <li><b>अव्ययीभाव समास:</b> जिसमें पहला शब्द अव्यय होता है। जैसे - तुरंतप्रभावी।</li>
+                <li><b>बहुव्रीहि समास:</b> जिसका अर्थ उसके किसी भाग से नहीं निकाला जा सकता। जैसे - चक्रधर (जिसके पास चक्र है)।</li>
+            </ul>
+            <button class="button" onclick="showTips()">समास पहचानने की टिप्स</button>
+            <div id="tipsTricks" class="tips hidden">
+                <h3>समास पहचानने की टिप्स और ट्रिक्स:</h3>
+                <ul>
+                    <li><b>द्वंद्व समास:</b> इसे पहचानने के लिए देखें कि दोनों शब्द समान रूप से महत्वपूर्ण हैं और किसी भी शब्द पर निर्भर नहीं करते। अक्सर "और" जोड़ने पर सही अर्थ मिलता है। जैसे - माता-पिता (माता और पिता)।</li>
+                    <li><b>तत्पुरुष समास:</b> इसमें पहला शब्द दूसरा शब्द का विशेषण होता है या उस पर निर्भर करता है। वाक्य में "का", "के" या "की" जोड़कर देखें। जैसे - राजकुमार (राजा का कुमार)।</li>
+                    <li><b>कर्मधारय समास:</b> इसे पहचानने के लिए देखिए कि विशेषण और विशेष्य का मेल है। पहला शब्द विशेषण और दूसरा विशेष्य होगा। जैसे - नीलकमल (नीला कमल)।</li>
+                    <li><b>अव्ययीभाव समास:</b> पहला शब्द अव्यय होता है जो दूसरे शब्द के साथ मिलकर नया अर्थ देता है। जैसे - तुरंतप्रभावी (तुरंत प्रभाव डालने वाला)।</li>
+                    <li><b>बहुव्रीहि समास:</b> इसे पहचानने के लिए देखें कि नए शब्द का अर्थ उसके किसी हिस्से से नहीं निकलता बल्कि पूरा नया अर्थ देता है। जैसे - चक्रधर (जिसके पास चक्र है)।</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTypes() {
+            var samasTypes = document.getElementById('samasTypes');
+            if (samasTypes.classList.contains('hidden')) {
+                samasTypes.classList.remove('hidden');
+            } else {
+                samasTypes.classList.add('hidden');
+            }
+        }
+
+        function showTips() {
+            var tipsTricks = document.getElementById('tipsTricks');
+            if (tipsTricks.classList.contains('hidden')) {
+                tipsTricks.classList.remove('hidden');
+            } else {
+                tipsTricks.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
